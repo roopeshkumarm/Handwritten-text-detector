@@ -1,4 +1,4 @@
-**Repository Name: handwritte-text-detector**
+**Handwritten-text-detector**
 
 ### Overview
 This repository contains the source code for a web application built with Flask for performing Optical Character Recognition (OCR) on uploaded images. The application utilizes PyTorch Lightning and the Transformers library for deep learning-based OCR tasks.

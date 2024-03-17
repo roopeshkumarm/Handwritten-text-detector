@@ -54,10 +54,10 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 [TEAM 404](https://github.com/roopeshkumarm)
 
 ### TEAM Members:
-      1. Roopesh Kumar M
-      2. Rajadurai S
-      3. Pavadareni R
-      4. Prithika G
+1. Roopesh Kumar M
+2. Rajadurai S
+3. Pavadareni R
+4. Prithika G
 
 ### Acknowledgements
 - This project utilizes pre-trained models from the Transformers library.
@@ -77,6 +77,8 @@ For any inquiries or issues, please contact [email@example.com](kroopeshm@gmail.
 - Implement user authentication and authorization.
 
 Feel free to suggest any other features or improvements you'd like to see in this project!
+
+### Output Image 
 
 ![output](https://github.com/roopeshkumarm/roopeshkumarm/assets/131011603/6522a697-24e3-469f-8a74-74b5aa44195a)
 

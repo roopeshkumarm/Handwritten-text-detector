@@ -12,11 +12,11 @@ This repository contains the source code for a web application built with Flask 
 ### Installation
 1. Clone the repository:
    ```
-   git clone https://github.com/your-username/OCR-Web-App.git
+   git clone https://github.com/roopeshkumarm/Handwritten-text-detector
    ```
 2. Navigate to the cloned directory:
    ```
-   cd OCR-Web-App
+   cd Handwritten-text-detector
    ```
 3. Install the required dependencies:
    ```

@@ -37,8 +37,7 @@ This repository contains the source code for a web application built with Flask 
 - Flask
 - PyTorch Lightning
 - Transformers
-- PIL (Python Imaging Library)
-- Werkzeug
+- PIL (Python Imaging Library) (pillow)
 
 ### File Structure
 - **app.py**: Main Flask application file containing routes and OCR functionality.

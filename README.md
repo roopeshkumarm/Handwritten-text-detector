@@ -53,6 +53,12 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ### Author
 [TEAM 404](https://github.com/roopeshkumarm)
 
+### TEAM Members:
+      1. Roopesh Kumar M
+      2. Rajadurai S
+      3. Pavadareni R
+      4. Prithika G
+
 ### Acknowledgements
 - This project utilizes pre-trained models from the Transformers library.
 - Special thanks to the PyTorch and Flask communities for their valuable resources and documentation.

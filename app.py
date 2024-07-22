@@ -9,9 +9,8 @@ app = Flask(__name__)
 CORS(app)
 
 # Load OCR model and processor
-model = VisionEncoderDecoderModel.from_pretrained(
-    "microsoft/trocr-large-handwritten"
-).to("cuda" if torch.cuda.is_available() else "cpu")
+device = "cuda" if torch.cuda.is_available() else "cpu"
+model = VisionEncoderDecoderModel.from_pretrained("microsoft/trocr-large-handwritten").to(device)
 processor = TrOCRProcessor.from_pretrained("microsoft/trocr-large-handwritten")
 
 # Allowed file extensions
@@ -22,17 +21,15 @@ def allowed_file(filename):
 
 # OCR function
 def ocr(image):
-    pixel_values = processor(image, return_tensors="pt").pixel_values.to(
-        "cuda" if torch.cuda.is_available() else "cpu"
-    )
+    pixel_values = processor(image, return_tensors="pt").pixel_values.to(device)
     generated_ids = model.generate(pixel_values)
     generated_text = processor.batch_decode(generated_ids, skip_special_tokens=True)[0]
     return generated_text
 
-#test-endpoint
-@app.route("/" , methods=["GET"])
+# Test endpoint
+@app.route("/", methods=["GET"])
 def get_method():
-    return jsonify({"msg" : "working ..."})
+    return jsonify({"msg": "working..."})
 
 # OCR endpoint
 @app.route("/api/ocr", methods=["POST"])
@@ -53,6 +50,6 @@ def upload_file():
         return jsonify({"text": text})
     else:
         return jsonify({"error": "Invalid file format. Allowed formats are: png, jpg, jpeg, gif"}), 400
-if __name__ == '__main__':
-    app.run(debug=True)
 
+if __name__ == "__main__":
+    app.run(debug=True)
